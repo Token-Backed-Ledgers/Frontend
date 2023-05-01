@@ -5,3 +5,8 @@ export enum SelectedPage {
     ContactUs = "contactus"
   }
   
+  export interface DocumentationType {
+    icon: JSX.Element;
+    title: string;
+    description: string;
+  }
