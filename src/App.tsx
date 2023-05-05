@@ -2,6 +2,7 @@ import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import About from "@/scenes/about";
 import Documentation from "@/scenes/documentation";
+import ContactUs from "@/scenes/contact";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "./shared/types";
 
@@ -36,6 +37,7 @@ function App() {
       <Documentation 
         setSelectedPage={setSelectedPage}/>
       <About setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   );
 }
