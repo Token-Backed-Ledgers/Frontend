@@ -1,8 +1,6 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -35,15 +33,13 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="relative">
-              <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext">
-                <img alt="home-page-text" src={HomePageText} />
-              </div>
+              <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext"></div>
             </div>
-
-            <p className="mt-8 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-              laborum est magnam dolore voluptatem eaque tenetur facere
-              dignissimos necessitatibus vero?
+            <p className="my-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              reiciendis iste cumque magnam cum vitae optio voluptatum quisquam
+              velit nisi ipsa, aspernatur pariatur libero esse? Doloribus ad
+              perspiciatis quaerat numquam?
             </p>
           </motion.div>
 
@@ -60,38 +56,18 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Lorem, ipsum.
+              Documentation
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
-            >
-              <p>Learn More</p>
-            </AnchorLink>
+            ></AnchorLink>
           </motion.div>
-        </div>
-        {/* IMAGE */}
-        <div
-          className="flex basis-3/5 justify-center md:z-10
-              md:ml-40 md:mt-16 md:justify-items-end"
-        >
-          <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>
       </motion.div>
 
       {/* SPONSORS */}
-      {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-primary-100 py-10">
-          <div className="mx-auto w-5/6">
-            <div className="flex w-3/5 items-center justify-between gap-8">
-              <img alt="sponsor-1" src="" />
-              <img alt="sponsor-2" src="" />
-              <img alt="sponsor-3" src="" />
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

@@ -37,7 +37,6 @@ const Documentation = ({
         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
         href={`#${SelectedPage.ContactUs}`}
       >
-        <p>Learn More</p>
       </AnchorLink>
     </motion.div>
   );

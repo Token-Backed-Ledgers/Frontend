@@ -7,7 +7,6 @@ import {
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Documentation from "./Documentation";
-import ActionButton from "@/shared/ActionButton";
 
 const documentations: Array<DocumentationType> = [
   {
@@ -65,7 +64,6 @@ const documentation = ({ setSelectedPage }: Props) => {
             voluptates minima excepturi quidem?
           </p>
         </motion.div>
-
         <motion.div
           className="mt-5 items-center justify-between gap-8 md:flex"
           initial="hidden"
@@ -84,7 +82,6 @@ const documentation = ({ setSelectedPage }: Props) => {
           ))}
         </motion.div>
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
-          <img className="mx-auto" src="" alt="img" />
           <div>
             <div>
               <div className="before:content-abstractwaves before:absolute before:-top-20 before:z-[1] ">
@@ -128,11 +125,7 @@ const documentation = ({ setSelectedPage }: Props) => {
               </p>
             </motion.div>
             <div className="relative mt-16">
-              <div className="before:content-sparkles before:absolute before:-bottom-20 before:right-40 before:z-[-1]">
-                <ActionButton setSelectedPage={setSelectedPage}>
-                  Learn More
-                </ActionButton>
-              </div>
+              <div className="before:content-sparkles before:absolute before:-bottom-20 before:right-40 before:z-[-1]"></div>
             </div>
           </div>
         </div>
