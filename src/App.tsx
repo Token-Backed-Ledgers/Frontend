@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-slate-400">
+    <div className="app">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -38,7 +38,6 @@ function App() {
       <Documentation 
         setSelectedPage={setSelectedPage}/>
       <About setSelectedPage={setSelectedPage} />
-      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   );
 }

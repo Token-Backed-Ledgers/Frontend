@@ -3,23 +3,24 @@ import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
+import HText from "@/shared/HText";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Home = ({ setSelectedPage }: Props) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  // const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="home" className="gap-16 bg-gray-20 py-8 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
         {/* MAIN HEADER */}
-        <div className="z-10 mt-32 md:basis-3/5">
+        <div className="z-10 mt-24 md:basis-3/5">
           {/* HEADINGS */}
           <motion.div
             className="md:-mt-20"
@@ -34,13 +35,11 @@ const Home = ({ setSelectedPage }: Props) => {
           >
             <div className="relative">
               <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext"></div>
-            </div>
-            <p className="my-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              reiciendis iste cumque magnam cum vitae optio voluptatum quisquam
-              velit nisi ipsa, aspernatur pariatur libero esse? Doloribus ad
-              perspiciatis quaerat numquam?
-            </p>
+            </div>{" "}
+            <HText>
+              Token Backed Ledgers enables scaling of tokens or tokenized assets
+              by providing them with a payments-specific protocol layer.
+            </HText>
           </motion.div>
 
           {/* ACTIONS */}
