@@ -24,11 +24,10 @@ const About = ({ setSelectedPage }: Props) => {
           <div className="md:w-3/5">
             <HText>ABOUT US</HText>
             <p className="py-5 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              ullam est, nihil praesentium, libero tenetur saepe eos officiis
-              illum cumque cum autem non soluta nesciunt facilis laboriosam eum
-              voluptate explicabo enim. Deserunt, laboriosam voluptates nihil
-              itaque maiores dolore dolor aut?
+              We are a team of Nigerians ― blockchain's most adopted country in
+              Africa ― that leveraged on BTC's execution client and Optimism
+              technology to build a payments-specific protocol layer for scaling
+              tokenized assets' transactions.
             </p>
           </div>
         </motion.div>
