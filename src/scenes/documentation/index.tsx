@@ -2,11 +2,12 @@ import HText from "@/shared/HText";
 import { DocumentationType, SelectedPage } from "@/shared/types";
 import {
   UserGroupIcon,
-  AcademicCapIcon,
+  LockClosedIcon,
   LightBulbIcon,
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Documentation from "./Documentation";
+import ActionButton from "@/shared/ActionButton";
 
 const documentations: Array<DocumentationType> = [
   {
@@ -19,10 +20,10 @@ const documentations: Array<DocumentationType> = [
     icon: <UserGroupIcon className="h-6 w-6" />,
     title: "Reduced Fees",
     description:
-      "Token Backed Ledgers separate fees to reduce transaction costs, leveraging the scalability of the BNB rollup chain for lower fees while maintaining Bitcoin's security and protocol attributes.",
+      "Leverage the scalability of the BNB rollup chain for lower fees, while maintaining BTC security and protocol attributes.",
   },
   {
-    icon: <AcademicCapIcon className="h-6 w-6" />,
+    icon: <LockClosedIcon className="h-6 w-6" />,
     title: "Enhanced Security",
     description:
       "Token Backed Ledgers leverage the proven security attributes of Bitcoin's execution client and the strong security measures of the BNB rollup chain, ensuring robust security for payments and asset transfers.",
@@ -90,8 +91,10 @@ const documentation = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                    Lorem ipsum dolor sit amet{" "}
-                    <span className="text-primary-500">LOREM</span>
+                    Contribute to{" "}
+                    <span className="text-primary-500">
+                      TOKEN BACKED LEDGERS
+                    </span>
                   </HText>
                 </motion.div>
               </div>
@@ -107,16 +110,13 @@ const documentation = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda reiciendis iste cumque magnam cum vitae optio
-                voluptatum quisquam velit nisi ipsa, aspernatur pariatur libero
-                esse? Doloribus ad perspiciatis quaerat numquam?
+                This website is open source communities contributors. You can
+                propose edits to any of the content on this site, suggest
+                awesome new features, or help us squash bugs.
               </p>
-              <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                pariatur veritatis eligendi quas reiciendis, neque ea aut. A
-                omnis earum dolor, iure voluptatem impedit fuga.
-              </p>
+              <ActionButton setSelectedPage={setSelectedPage}>
+                Documentation
+              </ActionButton>
             </motion.div>
             <div className="relative mt-16">
               <div className="before:content-sparkles before:absolute before:-bottom-20 before:right-40 before:z-[-1]"></div>
