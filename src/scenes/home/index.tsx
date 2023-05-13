@@ -37,8 +37,8 @@ const Home = ({ setSelectedPage }: Props) => {
               <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext"></div>
             </div>{" "}
             <HText>
-              Token Backed Ledgers enables scaling of tokens or tokenized assets
-              by providing them with a payments-specific protocol layer.
+              ZenithLedger enables scaling of tokens or tokenized assets by
+              providing them with a payments-specific protocol layer.
             </HText>
           </motion.div>
 
@@ -54,9 +54,15 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <ActionButton setSelectedPage={setSelectedPage}>
-              Documentation
-            </ActionButton>
+            <button className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white">
+              <a
+                href="https://github.com/Token-Backed-Ledgers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Documentation
+              </a>
+            </button>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}

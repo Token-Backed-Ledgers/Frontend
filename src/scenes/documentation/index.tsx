@@ -20,13 +20,13 @@ const documentations: Array<DocumentationType> = [
     icon: <UserGroupIcon className="h-6 w-6" />,
     title: "Reduced Fees",
     description:
-      "Leverage the scalability of the BNB rollup chain for lower fees, while maintaining BTC security and protocol attributes.",
+      "Leverage the scalability of the BNB rollup chain for lower fees, while maintaining Bitcoin security and protocol attributes.",
   },
   {
     icon: <LockClosedIcon className="h-6 w-6" />,
     title: "Enhanced Security",
     description:
-      "Token Backed Ledgers leverage the proven security attributes of Bitcoin's execution client and the strong security measures of the BNB rollup chain, ensuring robust security for payments and asset transfers.",
+      "The strong security measures of the BNB rollup chain and Bitcoin execution client are leveraged upon to ensure robust security for payments and asset transfers.",
   },
 ];
 
@@ -57,7 +57,7 @@ const documentation = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>TOKEN BACKED LEDGERS </HText>
+          <HText>ZenithLedger </HText>
         </motion.div>
         <motion.div
           className="mt-5 items-center justify-between gap-8 md:flex"
@@ -92,9 +92,7 @@ const documentation = ({ setSelectedPage }: Props) => {
                 >
                   <HText>
                     Contribute to{" "}
-                    <span className="text-primary-500">
-                      TOKEN BACKED LEDGERS
-                    </span>
+                    <span className="text-primary-500">ZenithLedger</span>
                   </HText>
                 </motion.div>
               </div>
@@ -110,13 +108,19 @@ const documentation = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                This website is open source communities contributors. You can
-                propose edits to any of the content on this site, suggest
-                awesome new features, or help us squash bugs.
+                This website is an open source for the community's contributors.
+                You can propose edits to any of the content on this site,
+                suggest awesome new features, or help us squash bugs.
               </p>
-              <ActionButton setSelectedPage={setSelectedPage}>
-                Documentation
-              </ActionButton>
+              <button className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white">
+                <a
+                  href="https://github.com/Token-Backed-Ledgers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Documentation
+                </a>
+              </button>
             </motion.div>
             <div className="relative mt-16">
               <div className="before:content-sparkles before:absolute before:-bottom-20 before:right-40 before:z-[-1]"></div>

@@ -9,7 +9,7 @@ const Footer = () => {
             purus et arcu massa dictum condimentum. Augue scelerisque iaculis
             orci ut habitant laoreet. Iaculis tristique.
           </p>
-          <p>TOKEN BASED LEDGER</p>
+          <p>ZenithLedger</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Links</h4>
