@@ -2,8 +2,6 @@ import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import About from "@/scenes/about";
 import Documentation from "@/scenes/documentation";
-import ContactUs from "@/scenes/contact";
-import Footer from "@/scenes/footer";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "./shared/types";
 

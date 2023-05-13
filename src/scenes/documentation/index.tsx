@@ -7,7 +7,6 @@ import {
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Documentation from "./Documentation";
-import ActionButton from "@/shared/ActionButton";
 
 const documentations: Array<DocumentationType> = [
   {
@@ -26,7 +25,7 @@ const documentations: Array<DocumentationType> = [
     icon: <LockClosedIcon className="h-6 w-6" />,
     title: "Enhanced Security",
     description:
-      "The strong security measures of the BNB rollup chain and Bitcoin execution client are leveraged upon to ensure robust security for payments and asset transfers.",
+      "Utilizing the BNB rollup chain and Bitcoin execution client, we ensure robust security for payments and asset transfers.",
   },
 ];
 
